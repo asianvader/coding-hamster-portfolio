@@ -1,0 +1,51 @@
+// Navbar
+.navbar {
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  transition: top 0.3s;
+  z-index: 10;
+
+  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
+  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
+  box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
+
+}
+
+/* GRID SETTINGS */
+.my-container {
+  border: 1px solid green;
+  }
+.my-row {
+  border: 3px solid red;
+  }
+.my-col {
+  border: 3px dotted blue;
+  }
+
+//Background images
+// #home {
+//   height: 44rem;
+//   background-image: url(images/hamster2-1920.jpg);
+//   background-repeat: no-repeat;
+//   background-position: center;
+//   background-size: 100% auto;
+// }
+.no-padding {
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.carousel-caption {
+  border: 3px dotted blue;
+  bottom: 25vw;
+  z-index: 10;
+  text-align: right;
+  margin-left:30vw;
+  width: 50vw;
+  font-weight: 900;
+
+}
+.carousel-caption p:nth-child(1) {
+font-size: 2.5vw;
+}

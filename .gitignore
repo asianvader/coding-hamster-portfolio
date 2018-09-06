@@ -1,0 +1,13 @@
+*.swp
+*~
+
+
+node_modules
+package-lock.json
+assets/*
+!assets/images
+.DS_Store
+Thumbs.db
+.project
+.svn
+.nvm-version
