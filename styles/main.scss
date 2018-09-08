@@ -1,3 +1,7 @@
+body {
+  font-family: 'Roboto', sans-serif !important;
+}
+
 // Navbar
 .navbar {
   background-color: white;
@@ -31,6 +35,8 @@
 //   background-position: center;
 //   background-size: 100% auto;
 // }
+
+// MISC
 .no-padding {
   padding-left: 0;
   padding-right: 0;
@@ -38,14 +44,75 @@
 
 .carousel-caption {
   border: 3px dotted blue;
-  bottom: 25vw;
+  bottom: 470px;
   z-index: 10;
-  text-align: right;
-  margin-left:30vw;
-  width: 50vw;
-  font-weight: 900;
-
+  display: block;
+  margin-left:10vw;
+  width: 55vw;
 }
 .carousel-caption p:nth-child(1) {
-font-size: 2.5vw;
+  font-size: 3.2vw;
+  font-weight: 400;
+  letter-spacing: 0.01em;
 }
+
+// .home-container {
+//   height: 800px;
+//   overflow: hidden;
+// }
+#hamster-img {
+  min-height: 800px;
+  min-width: 1500px;
+  overflow: hidden;
+}
+
+// RESPONSIVE css
+//--------------------
+// iphone x
+@media only screen
+  and (min-device-width: 375px)
+  and (max-device-width: 812px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    #hamster-img {
+      display: none;
+    }
+
+    #home {
+      height: 100vh;
+      width: auto;
+      background: url(images/hamster2-4500.jpeg);
+      background-position: left -150px bottom 0px;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+
+    }
+  }
+
+  @media only screen
+    and (min-device-width : 375px)
+    and (max-device-width : 812px)
+    and (-webkit-device-pixel-ratio : 3)
+    and (orientation : landscape) {
+      #hamster-img {
+        display: none;
+      }
+
+      #home {
+        height: 100vh;
+        width: auto;
+        background: url(images/hamster2-4500.jpeg);
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+
+      }
+
+    }
+
+
+
+//
