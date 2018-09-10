@@ -3,7 +3,10 @@ const gulp = require('gulp'),
       sass = require('gulp-sass'),
       uglify = require('gulp-uglify'),
       concat = require('gulp-concat'),
-      connect = require('gulp-connect');
+      connect = require('gulp-connect'),
+      sourcemaps = require('gulp-sourcemaps'),
+      autoprefixer = require('gulp-autoprefixer');
+
       // autoprefixer = require('gulp-autoprefixer');
 
 const jsSources = ['scripts/*.js'],
@@ -22,11 +25,22 @@ gulp.task('copy', function() {
 
 gulp.task('sass', function() {
   gulp.src(sassSources)
-  .pipe(sass({ style: 'expanded' }))
-  // .pipe(autoprefixer({
-	// 		browsers: ['last 2 versions'],
-	// 		cascade: false
-	// 	}))
+  .pipe(sass(
+//    { outputStyle: 'compressed' }
+  )
+)
+  // https://web-design-weekly.com/2014/06/15/different-sass-output-styles/
+  // nested:compact:expanded:compressed
+  .pipe(sourcemaps.init())
+  //.pipe(autoprefixer(
+    // optional settings
+    // {
+	 	// 	browsers: ['last 2 versions'],
+	 	// 	cascade: false
+	 	// }
+  //))
+  //.pipe(concat('main.css'))
+  .pipe(sourcemaps.write('.'))
   .on('error', gutil.log)
   .pipe(gulp.dest(outputDir))
 });
