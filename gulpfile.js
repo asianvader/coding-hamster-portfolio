@@ -3,10 +3,20 @@ const sass = require('gulp-sass');
 const sourcemaps = require('gulp-sourcemaps');
 const autoprefixer = require('gulp-autoprefixer');
 const rename = require('gulp-rename');
-
+const concat = require('gulp-concat');
+const connect = require('gulp-connect');
+const gutil = require('gulp-util');
+const terser = require('gulp-terser');
 
 const sassSources = ['styles/*.scss'];
 const outputDir = 'assets';
+const jsSources = ['scripts/*.js'];
+const htmlSources = ['**/*.html'];
+
+
+gulp.task('log', function() {
+  gutil.log('== My Log Task ==')
+});
 
 gulp.task('style', function() {
   gulp.src(sassSources)
@@ -25,6 +35,37 @@ gulp.task('style', function() {
     .pipe(gulp.dest(outputDir));
 });
 
+gulp.task('js', function() {
+  gulp.src(jsSources)
+  .pipe(sourcemaps.init({loadMaps: true}))
+  .pipe(terser())
+  .pipe(concat('script.min.js'))
+  .pipe(sourcemaps.write('.'))
+  .pipe(gulp.dest(outputDir))
+  .on('error', gutil.log)
+});
+
+
+gulp.task('watch', ['default'], function(){
+  gulp.watch(jsSources, ['js']);
+  gulp.watch(sassSources, ['style']);
+});
+
+gulp.task('html', function() {
+  gulp.src(htmlSources)
+  .pipe(connect.reload())
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'assets',
+    livereload: true
+  })
+});
+
+
+
+gulp.task('default', ['style', 'js', 'connect', 'watch', 'html']);
 
 // const gulp = require('gulp'),
 //       gutil = require('gulp-util'),
