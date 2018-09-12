@@ -17,8 +17,11 @@
   },
   "homepage": "https://github.com/asianvader/coding-hamster-portfolio#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.1",
+    "@babel/preset-env": "^7.0.0",
     "gulp": "^3.9.1",
     "gulp-autoprefixer": "^6.0.0",
+    "gulp-babel": "^8.0.0",
     "gulp-browserify": "^0.5.1",
     "gulp-concat": "^2.6.1",
     "gulp-connect": "^5.6.1",

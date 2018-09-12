@@ -6,7 +6,9 @@ const rename = require('gulp-rename');
 const concat = require('gulp-concat');
 const connect = require('gulp-connect');
 const gutil = require('gulp-util');
-const terser = require('gulp-terser');
+// const terser = require('gulp-terser');
+const babel = require('gulp-babel');
+
 
 const sassSources = ['styles/*.scss'];
 const outputDir = 'assets';
@@ -44,7 +46,10 @@ gulp.task('style', function() {
 gulp.task('js', function() {
   gulp.src(jsSources)
   .pipe(sourcemaps.init())
-  .pipe(terser())
+  .pipe(babel({
+      presets: ['@babel/env']
+  }))
+  // .pipe(terser())
   .pipe(rename('script.min.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest(outputDir))
