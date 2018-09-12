@@ -18,6 +18,11 @@ gulp.task('log', function() {
   gutil.log('== My Log Task ==')
 });
 
+gulp.task('copy', function() {
+  gulp.src('*.html')
+  .pipe(gulp.dest(outputDir))
+});
+
 gulp.task('style', function() {
   gulp.src(sassSources)
     .pipe(sourcemaps.init())
@@ -49,6 +54,7 @@ gulp.task('js', function() {
 gulp.task('watch', ['default'], function(){
   gulp.watch(jsSources, ['js']);
   gulp.watch(sassSources, ['style']);
+  gulp.watch(htmlSources, ['copy'])
 });
 
 gulp.task('html', function() {
