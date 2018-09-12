@@ -12,6 +12,7 @@ const sassSources = ['styles/*.scss'];
 const outputDir = 'assets';
 const jsSources = ['scripts/*.js'];
 const htmlSources = ['**/*.html'];
+const styleWatch = ['scripts/*.scss'];
 
 
 gulp.task('log', function() {
@@ -42,19 +43,18 @@ gulp.task('style', function() {
 
 gulp.task('js', function() {
   gulp.src(jsSources)
-  .pipe(sourcemaps.init({loadMaps: true}))
+  .pipe(sourcemaps.init())
   .pipe(terser())
-  .pipe(concat('script.min.js'))
+  .pipe(rename('script.min.js'))
   .pipe(sourcemaps.write('.'))
   .pipe(gulp.dest(outputDir))
-  .on('error', gutil.log)
 });
 
 
-gulp.task('watch', ['default'], function(){
+gulp.task('watch', ['default'], function() {
   gulp.watch(jsSources, ['js']);
   gulp.watch(sassSources, ['style']);
-  gulp.watch(htmlSources, ['copy'])
+  gulp.watch(htmlSources, ['copy']);
 });
 
 gulp.task('html', function() {
@@ -69,9 +69,9 @@ gulp.task('connect', function() {
   })
 });
 
+gulp.task('default', [ 'style', 'connect', 'html', 'js']);
 
-
-gulp.task('default', ['style', 'js', 'connect', 'watch', 'html']);
+// gulp.task('default', ['html', 'style', 'js', 'connect', 'watch']);
 
 // const gulp = require('gulp'),
 //       gutil = require('gulp-util'),
