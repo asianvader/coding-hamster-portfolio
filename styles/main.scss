@@ -73,7 +73,6 @@ body {
 }
 
 @mixin hamster-bg {
-  height: 100vh;
   width: auto;
   background: url(images/hamster2-4500.jpeg);
   background-size: cover;
@@ -91,6 +90,7 @@ body {
 
     #home {
       @include hamster-bg;
+      height: 800px;
       background-position: left -150px bottom 0px;
     }
   }
@@ -104,7 +104,10 @@ body {
 
       #home {
         @include hamster-bg;
+        height: 375px;
       }
+
+
 
     }
 
