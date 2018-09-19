@@ -80,7 +80,7 @@ body {
 
 
 
-// iPhone X
+// iPhone X, 6+, 7+ & 8+
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
@@ -95,21 +95,48 @@ body {
     }
   }
 
-  @media only screen
-    and (min-device-width : 375px)
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3)
-    and (orientation : landscape) {
-      @include hamster-none;
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 812px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : landscape) {
+    @include hamster-none;
 
-      #home {
-        @include hamster-bg;
-        height: 375px;
-      }
-
-
-
+    #home {
+      @include hamster-bg;
+      height: 375px;
     }
+  }
+
+// iPhone 6, 7, & 8
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : portrait)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @include hamster-none;
+
+    #home {
+      @include hamster-bg;
+      height: 800px;
+      background-position: left -150px bottom 0px;
+    }
+  }
+
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 667px)
+  and (orientation : landscape)
+  and (-webkit-min-device-pixel-ratio: 2) {
+    @include hamster-none;
+
+    #home {
+      @include hamster-bg;
+      height: 375px;
+    }
+  }
+
+
 
 
 
