@@ -41,7 +41,7 @@ body {
 
 // Hero image text
   h1 {
-    margin-top: 5rem;
+    padding-top: 5.3rem;
     font-size: 2.5rem;
     text-transform: uppercase;
     color: white;
@@ -62,17 +62,42 @@ body {
 //----------------------
 
 // most smartphones (portrait)
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px)
+and (max-width: 480px)
+and (orientation: portrait) {
   #home {
     background-attachment: scroll;
     background-position: left -70px bottom 0px;
   }
+  .heroimg {
+    h1 {
+      font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
 }
 
 // most smartphones (landscape)
 @media only screen
-  and (min-width : 321px) {
-    background-attachment: scroll;
+  and (min-width: 321px)
+  and (max-width: 812px)
+  and (orientation: landscape) {
+    #home {
+      background-attachment: scroll;
+    }
+
+    .heroimg {
+      h1 {
+        font-size: 1.9rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
 }
 
 // iPhone X
