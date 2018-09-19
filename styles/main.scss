@@ -28,19 +28,17 @@ body {
   }
 
 //Background images
-// #home {
-//   height: 44rem;
-//   background-image: url(images/hamster2-1920.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 100% auto;
-// }
+.heroimg {
+  width:100%;
+  height:700px;
+  background: url('images/hamster2-4500.jpeg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:cover;
+  background-attachment: fixed;
+}
 
 // MISC
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .carousel-caption {
   border: 3px dotted blue;
@@ -56,10 +54,6 @@ body {
   letter-spacing: 0.01em;
 }
 
-// .home-container {
-//   height: 800px;
-//   overflow: hidden;
-// }
 #hamster-img {
   min-height: 800px;
   min-width: 1500px;
@@ -67,52 +61,42 @@ body {
 }
 
 // RESPONSIVE css
-//--------------------
-// iphone x
+//----------------------
+
+// most smartphones (portrait)
+@media (min-width: 320px) and (max-width: 480px) {
+  #home {
+    background-attachment: scroll;
+    background-position: left -70px bottom 0px;
+  }
+}
+
+// most smartphones (landscape)
+@media only screen
+  and (min-width : 321px) {
+    background-attachment: scroll;
+}
+
+// iPhone X
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    #hamster-img {
-      display: none;
-    }
-
     #home {
-      height: 100vh;
-      width: auto;
-      background: url(images/hamster2-4500.jpeg);
-      background-position: left -150px bottom 0px;
-      -webkit-background-size: cover;
-      -moz-background-size: cover;
-      -o-background-size: cover;
-      background-size: cover;
-
+      height: 800px;
+      background-attachment: scroll;
+      background-position: left -100px bottom 0px;
     }
   }
 
-  @media only screen
-    and (min-device-width : 375px)
-    and (max-device-width : 812px)
-    and (-webkit-device-pixel-ratio : 3)
-    and (orientation : landscape) {
-      #hamster-img {
-        display: none;
-      }
-
-      #home {
-        height: 100vh;
-        width: auto;
-        background: url(images/hamster2-4500.jpeg);
-        -webkit-background-size: cover;
-        -moz-background-size: cover;
-        -o-background-size: cover;
-        background-size: cover;
-
-      }
-
+@media only screen
+  and (min-device-width : 375px)
+  and (max-device-width : 812px)
+  and (-webkit-device-pixel-ratio : 3)
+  and (orientation : landscape) {
+    #home {
+      height: 375px;
+      background-attachment: scroll;
     }
-
-
-
-//
+  }
