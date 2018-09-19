@@ -28,19 +28,17 @@ body {
   }
 
 //Background images
-// #home {
-//   height: 44rem;
-//   background-image: url(images/hamster2-1920.jpg);
-//   background-repeat: no-repeat;
-//   background-position: center;
-//   background-size: 100% auto;
-// }
+.heroimg {
+  width:100%;
+  height:700px;
+  background: url('images/hamster2-4500.jpeg');
+  background-repeat: no-repeat;
+  background-position: left;
+  background-size:cover;
+  background-attachment: fixed;
+}
 
 // MISC
-.no-padding {
-  padding-left: 0;
-  padding-right: 0;
-}
 
 .carousel-caption {
   border: 3px dotted blue;
@@ -65,33 +63,30 @@ body {
 // RESPONSIVE css
 //----------------------
 
-// mixins
-@mixin hamster-none {
-  #hamster-img {
-    display: none;
+// most smartphones (portrait)
+@media (min-width: 320px) and (max-width: 480px) {
+  #home {
+    background-attachment: scroll;
+    background-position: left -70px bottom 0px;
   }
 }
 
-@mixin hamster-bg {
-  width: auto;
-  background: url(images/hamster2-4500.jpeg);
-  background-size: cover;
+// most smartphones (landscape)
+@media only screen
+  and (min-width : 321px) {
+    background-attachment: scroll;
 }
 
-
-
-// iPhone X, 6+, 7+ & 8+
+// iPhone X
 @media only screen
   and (min-device-width: 375px)
   and (max-device-width: 812px)
   and (-webkit-min-device-pixel-ratio: 3)
   and (orientation: portrait) {
-    @include hamster-none;
-
     #home {
-      @include hamster-bg;
       height: 800px;
-      background-position: left -150px bottom 0px;
+      background-attachment: scroll;
+      background-position: left -100px bottom 0px;
     }
   }
 
@@ -100,97 +95,8 @@ body {
   and (max-device-width : 812px)
   and (-webkit-device-pixel-ratio : 3)
   and (orientation : landscape) {
-    @include hamster-none;
-
     #home {
-      @include hamster-bg;
       height: 375px;
+      background-attachment: scroll;
     }
   }
-
-// iPhone 6, 7, & 8
-@media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : portrait)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 800px;
-      background-position: left -150px bottom 0px;
-    }
-  }
-
-@media only screen
-  and (min-device-width : 375px)
-  and (max-device-width : 667px)
-  and (orientation : landscape)
-  and (-webkit-min-device-pixel-ratio: 2) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 375px;
-    }
-  }
-
-// Galaxy S3
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: portrait) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 640px;
-      background-position: left -150px bottom 0px;
-    }
-}
-
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 2)
-  and (orientation: landscape) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 320px;
-    }
-}
-
-// Galaxy S4, S5 and Note 3
-
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: portrait) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 640px;
-      background-position: left -150px bottom 0px;
-    }
-}
-
-@media screen
-  and (device-width: 320px)
-  and (device-height: 640px)
-  and (-webkit-device-pixel-ratio: 3)
-  and (orientation: landscape) {
-    @include hamster-none;
-
-    #home {
-      @include hamster-bg;
-      height: 320px;
-    }
-}
-
-//
