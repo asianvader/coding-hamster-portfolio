@@ -136,8 +136,61 @@ body {
     }
   }
 
+// Galaxy S3
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: portrait) {
+    @include hamster-none;
 
+    #home {
+      @include hamster-bg;
+      height: 640px;
+      background-position: left -150px bottom 0px;
+    }
+}
 
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 2)
+  and (orientation: landscape) {
+    @include hamster-none;
 
+    #home {
+      @include hamster-bg;
+      height: 320px;
+    }
+}
+
+// Galaxy S4, S5 and Note 3
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    @include hamster-none;
+
+    #home {
+      @include hamster-bg;
+      height: 640px;
+      background-position: left -150px bottom 0px;
+    }
+}
+
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    @include hamster-none;
+
+    #home {
+      @include hamster-bg;
+      height: 320px;
+    }
+}
 
 //
