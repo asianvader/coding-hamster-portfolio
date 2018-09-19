@@ -28,6 +28,8 @@ body {
   }
 
 //Background images
+
+// hero image
 .heroimg {
   width:100%;
   height:700px;
@@ -36,45 +38,66 @@ body {
   background-position: left;
   background-size:cover;
   background-attachment: fixed;
-}
 
-// MISC
+// Hero image text
+  h1 {
+    padding-top: 5.3rem;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    color: white;
+    text-shadow: 1px 1px 1px #000;
+    text-align: center;
+    }
 
-.carousel-caption {
-  border: 3px dotted blue;
-  bottom: 470px;
-  z-index: 10;
-  display: block;
-  margin-left:10vw;
-  width: 55vw;
-}
-.carousel-caption p:nth-child(1) {
-  font-size: 3.2vw;
-  font-weight: 400;
-  letter-spacing: 0.01em;
-}
-
-#hamster-img {
-  min-height: 800px;
-  min-width: 1500px;
-  overflow: hidden;
-}
+    p {
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: white;
+      text-shadow: 1px 1px 1px #000;
+      text-align: center;
+    }
+  }
 
 // RESPONSIVE css
 //----------------------
 
 // most smartphones (portrait)
-@media (min-width: 320px) and (max-width: 480px) {
+@media (min-width: 320px)
+and (max-width: 480px)
+and (orientation: portrait) {
   #home {
     background-attachment: scroll;
     background-position: left -70px bottom 0px;
   }
+  .heroimg {
+    h1 {
+      font-size: 2rem;
+      }
+
+      p {
+        font-size: 1.5rem;
+      }
+    }
 }
 
 // most smartphones (landscape)
 @media only screen
-  and (min-width : 321px) {
-    background-attachment: scroll;
+  and (min-width: 321px)
+  and (max-width: 812px)
+  and (orientation: landscape) {
+    #home {
+      background-attachment: scroll;
+    }
+
+    .heroimg {
+      h1 {
+        font-size: 1.9rem;
+        }
+
+        p {
+          font-size: 1.4rem;
+        }
+      }
 }
 
 // iPhone X
