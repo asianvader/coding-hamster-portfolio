@@ -112,6 +112,21 @@ p {
   padding-bottom: 3rem;
 }
 
+.card-deck {
+
+  .card {
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      
+    }
+  }
+}
+
 
 // RESPONSIVE css
 //----------------------
