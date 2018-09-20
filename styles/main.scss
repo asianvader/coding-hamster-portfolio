@@ -89,8 +89,8 @@ p {
   height:auto;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ), url('images/aboutbg1.jpeg');
+      rgba(0, 0, 0, 0.6)),
+      url('images/aboutbg1.jpeg');
   background-repeat:repeat;
   background-position: center;
   background-size:cover;
@@ -114,8 +114,8 @@ p {
 
 // card deck
 .card-deck {
-
-  .card {
+  .card1 {
+    padding-bottom: 1rem;
 
     .card-body {
       padding: 0.5rem;
@@ -126,6 +126,29 @@ p {
       .card-text {
         font-size: 1rem;
         color: white;
+
+      }
+
+      .card-title {
+        padding-top: 1rem;
+        color: white;
+      }
+    }
+  }
+
+  .card2 {
+    padding-bottom: 1rem;
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: white;
+
       }
 
       .card-title {
@@ -136,8 +159,14 @@ p {
   }
 }
 
+
+
 .card1 {
   background-image: linear-gradient(to right top, #fd8de1, #ec82e7, #d77aef, #bc74f7, #9a70ff);
+}
+
+.card2 {
+  background-image: linear-gradient(to right top, #3653a7, #006196, #006370, #2d5f50, #4f5948);
 }
 
 // RESPONSIVE css
