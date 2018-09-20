@@ -1,7 +1,41 @@
+/* GRID SETTINGS */
+// .my-container {
+//   border: 1px solid green;
+//   }
+// .my-row {
+//   border: 3px solid red;
+//   }
+// .my-col {
+//   border: 3px dotted blue;
+//   }
+
+
 body {
   font-family: 'Roboto', sans-serif !important;
+  text-align: center;
 }
 
+h2 {
+  display: inline-block;
+  border-bottom: solid 5px #2c90fc;
+  font-size: 2.5rem;
+  text-transform: uppercase;
+  vertical-align: middle;
+  letter-spacing: 0.06em;
+  line-height: 1.1;
+  margin-bottom: 20px;
+  padding-bottom: 10px;
+  padding-top: 20px;
+}
+
+p {
+  line-height: 1.6;
+  font-size: 1.3rem;
+}
+
+section {
+  padding-top: 3rem;
+}
 // Navbar
 .navbar {
   background-color: white;
@@ -15,17 +49,6 @@ body {
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
 
 }
-
-/* GRID SETTINGS */
-.my-container {
-  border: 1px solid green;
-  }
-.my-row {
-  border: 3px solid red;
-  }
-.my-col {
-  border: 3px dotted blue;
-  }
 
 //Background images
 
@@ -57,6 +80,14 @@ body {
       text-align: center;
     }
   }
+
+
+// About me
+
+#about {
+
+}
+
 
 // RESPONSIVE css
 //----------------------
