@@ -34,10 +34,6 @@ p {
   font-size: 1.3rem;
 }
 
-section {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-}
 // Navbar
 .navbar {
   background-color: white;
@@ -87,6 +83,8 @@ section {
 // About me
 
 #about {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width:100%;
   height:auto;
   background: linear-gradient(
