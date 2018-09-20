@@ -106,12 +106,13 @@ p {
   }
 }
 
-// Portfolio section
+//<---------------------- Portfolio section ---------------------->
 #portfolio {
   padding-top: 3rem;
   padding-bottom: 3rem;
 }
 
+// card deck
 .card-deck {
 
   .card {
@@ -122,11 +123,22 @@ p {
       img {
         border: 1px solid #D5DDDE;
       }
-      
+      .card-text {
+        font-size: 1rem;
+        color: white;
+      }
+
+      .card-title {
+        padding-top: 1rem;
+        color: white;
+      }
     }
   }
 }
 
+.card1 {
+  background-image: linear-gradient(to right top, #fd8de1, #ec82e7, #d77aef, #bc74f7, #9a70ff);
+}
 
 // RESPONSIVE css
 //----------------------
@@ -146,6 +158,13 @@ and (orientation: portrait) {
 
       p {
         font-size: 1.5rem;
+      }
+    }
+
+    #about {
+      p {
+        margin-left: 0px;
+        margin-right: 0px;
       }
     }
 }
