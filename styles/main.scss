@@ -23,7 +23,7 @@ h2 {
   vertical-align: middle;
   letter-spacing: 0.06em;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 10px;
   padding-top: 20px;
   font-weight: 600;
@@ -114,6 +114,10 @@ p {
 
 // card deck
 .card-deck {
+  .card {
+    box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
+  }
+
   .card1 {
     padding-bottom: 1rem;
 
@@ -170,15 +174,13 @@ p {
       .card-text {
         font-size: 1rem;
       }
-      
+
       .card-title {
         padding-top: 1rem;
       }
     }
   }
 }
-
-
 
 .card1 {
   background-image: linear-gradient(to right top, #fd8de1, #ec82e7, #d77aef, #bc74f7, #9a70ff);
