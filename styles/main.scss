@@ -23,7 +23,7 @@ h2 {
   vertical-align: middle;
   letter-spacing: 0.06em;
   line-height: 1.1;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   padding-bottom: 10px;
   padding-top: 20px;
   font-weight: 600;
@@ -89,8 +89,8 @@ p {
   height:auto;
   background: linear-gradient(
       rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)
-    ), url('images/aboutbg1.jpeg');
+      rgba(0, 0, 0, 0.6)),
+      url('images/aboutbg1.jpeg');
   background-repeat:repeat;
   background-position: center;
   background-size:cover;
@@ -106,6 +106,93 @@ p {
   }
 }
 
+//<---------------------- Portfolio section ---------------------->
+#portfolio {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+// card deck
+.card-deck {
+  .card {
+    box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
+  }
+
+  .card1 {
+    padding-bottom: 1rem;
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: white;
+
+      }
+
+      .card-title {
+        padding-top: 1rem;
+        color: white;
+      }
+    }
+  }
+
+  .card2 {
+    padding-bottom: 1rem;
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      .card-text {
+        font-size: 1rem;
+        color: white;
+
+      }
+
+      .card-title {
+        padding-top: 1rem;
+        color: white;
+      }
+    }
+  }
+
+  .card3 {
+    padding-bottom: 1rem;
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      .card-text {
+        font-size: 1rem;
+      }
+
+      .card-title {
+        padding-top: 1rem;
+      }
+    }
+  }
+}
+
+.card1 {
+  background-image: linear-gradient(to right top, #fd8de1, #ec82e7, #d77aef, #bc74f7, #9a70ff);
+}
+
+.card2 {
+  background-image: linear-gradient(to right top, #3653a7, #006196, #006370, #2d5f50, #4f5948);
+}
+
+.card3 {
+  background-image: linear-gradient(to left bottom, #17a2b8, #71b3d1, #a9c5e0, #d4dae9, #f2f2f2);
+}
 
 // RESPONSIVE css
 //----------------------
@@ -125,6 +212,13 @@ and (orientation: portrait) {
 
       p {
         font-size: 1.5rem;
+      }
+    }
+
+    #about {
+      p {
+        margin-left: 0px;
+        margin-right: 0px;
       }
     }
 }
