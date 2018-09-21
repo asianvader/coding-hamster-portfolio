@@ -157,6 +157,25 @@ p {
       }
     }
   }
+
+  .card3 {
+    padding-bottom: 1rem;
+
+    .card-body {
+      padding: 0.5rem;
+
+      img {
+        border: 1px solid #D5DDDE;
+      }
+      .card-text {
+        font-size: 1rem;
+      }
+      
+      .card-title {
+        padding-top: 1rem;
+      }
+    }
+  }
 }
 
 
@@ -167,6 +186,10 @@ p {
 
 .card2 {
   background-image: linear-gradient(to right top, #3653a7, #006196, #006370, #2d5f50, #4f5948);
+}
+
+.card3 {
+  background-image: linear-gradient(to left bottom, #17a2b8, #71b3d1, #a9c5e0, #d4dae9, #f2f2f2);
 }
 
 // RESPONSIVE css
