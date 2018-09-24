@@ -367,11 +367,16 @@ and (orientation: portrait) {
       }
   }
 
-  /* Landscape */
-  @media only screen
-    and (min-device-width: 320px)
-    and (max-device-width: 568px)
-    and (-webkit-min-device-pixel-ratio: 2)
-    and (orientation: landscape) {
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
 
-  }
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    #home {
+      height: 415px;
+      background-attachment: scroll;
+    }
+}
