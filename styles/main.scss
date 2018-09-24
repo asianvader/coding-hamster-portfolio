@@ -34,6 +34,20 @@ p {
   font-size: 1.3rem;
 }
 
+hr {
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
+}
+
+ul {
+  padding: 0;
+
+  li {
+    list-style-type: none;
+  }
+}
+
 // Navbar
 .navbar {
   background-color: white;
@@ -108,12 +122,13 @@ p {
 
 //<---------------------- Portfolio section ---------------------->
 #portfolio {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2rem;
 }
 
 // card deck
 .card-deck {
+  padding-bottom: 3rem;
+
   .card {
     box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
   }
@@ -192,6 +207,43 @@ p {
 
 .card3 {
   background-image: linear-gradient(to left bottom, #17a2b8, #71b3d1, #a9c5e0, #d4dae9, #f2f2f2);
+}
+
+//<---------------------- Skills section ---------------------->
+
+#skills {
+
+}
+
+.jquery {
+  padding-bottom: 12px;
+}
+
+.bootstrap-logo {
+  padding-bottom: 2px;
+  max-width: 70px;
+  min-height: 77px;
+}
+
+.redux {
+  max-width: 70px;
+  max-height: 80px;
+  padding-bottom: 16px
+}
+
+.card-skills {
+  margin-bottom: 1rem;
+  box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
+
+  p {
+    font-size: 1rem;
+  }
+
+  .card-body {
+    p {
+      font-size: 1rem;
+    }
+  }
 }
 
 // RESPONSIVE css
