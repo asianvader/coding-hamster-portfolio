@@ -77,16 +77,20 @@ ul {
 // Hero image text
   h1 {
     font-family: 'Oswald', sans-serif;
-    padding-top: 5.3rem;
-    font-size: 3rem;
+    padding-top: 5.1rem;
+    font-size: 3.6rem;
     color: white;
     text-shadow: 0.5px 1px 1px #000;
     text-align: center;
+
+    .phoebe {
+      color: #FFFACD;
+      }
     }
 
     p {
       font-family: 'Oswald', sans-serif;
-      font-size: 2.5rem;
+      font-size: 3rem;
       color: white;
       text-shadow: 1px 1px 1px #000;
       text-align: center;
