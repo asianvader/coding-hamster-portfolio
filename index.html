@@ -303,23 +303,28 @@
           </div>
         </div>
       </div>
+      <hr>
     </section>
 
+
     <section id="contact">
-      <div class="container my-container">
+      <div class="container">
         <div class="row">
           <div class="col">
             <h2>Contact</h2>
           </div>
         </div>
-        <div class="row">
-          <div class="col">
-            <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
-                  action="https://codinghamster.wufoo.com/forms/zfz3dmb0w89pt6/#public">
-              <div class="form-group">
-                <header id="header" class="info">
-                  <div class="leftFormProp"><h6>If you have a question, please fill in the form below.</h6></div>
-                </header>
+
+      <div class="card">
+        <h6 class="card-header bg-info text-white py-4">
+          If you have a question, please fill in the form below.
+        </h6>
+        <div class="card-body">
+          <div class="row">
+            <div class="col">
+              <form id="form1" name="form1" class="wufoo topLabel page" accept-charset="UTF-8" autocomplete="off" enctype="multipart/form-data" method="post" novalidate
+                    action="https://codinghamster.wufoo.com/forms/zfz3dmb0w89pt6/#public">
+                <div class="form-group">
                   <div class="row justify-content-center text-center">
                     <div class="col-4">
                       <label for="Field1">First name: </label>
@@ -364,16 +369,19 @@
 
                   <div class="row justify-content-center text-center">
                     <div class="col-2">
-                      <input id="saveForm" name="saveForm" class="btn btn-info btn-block" type="submit" value="Submit"/>
+                      <input id="saveForm" name="saveForm" class="btn btn-outline-info btn-rounded btn-block my-4 waves-effect z-depth-0" type="submit" value="Submit"/>
                     </div>
                   </div>
-                  <div>
                 </div>
+
+                  <div class="hide">
+                    <label for="comment">Do Not Fill This Out</label>
+                    <textarea name="comment" id="comment" rows="1" cols="1"></textarea>
+                    <input type="hidden" id="idstamp" name="idstamp" value="vnFHAgcWbWGEjvG6ZFDln2mAyi2D7cJGFHLMWT+kuSs=" />
+                  </div>
+                </form>
               </div>
-            </form>
-
-
-
+            </div>
           </div>
         </div>
       </div>
