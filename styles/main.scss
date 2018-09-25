@@ -76,20 +76,27 @@ ul {
 
 // Hero image text
   h1 {
-    padding-top: 5.3rem;
-    font-size: 2.5rem;
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
+    padding-top: 5.1rem;
+    font-size: 3.6rem;
     color: white;
-    text-shadow: 1px 1px 1px #000;
-    text-align: center;
+    text-shadow: 0.5px 1px 1px #000;
+    text-align: right;
+    margin-right: 100px;
+
+    .phoebe {
+      color: #FFFACD;
+      font-size: 4rem;
+      }
     }
 
     p {
-      font-size: 2rem;
-      text-transform: uppercase;
+      font-family: 'Oswald', sans-serif;
+      font-size: 3rem;
       color: white;
-      text-shadow: 1px 1px 1px #000;
-      text-align: center;
+      text-shadow: 0.5px 1px 1px #000;
+      text-align: right;
+      margin-right: 100px;
     }
   }
 
@@ -259,11 +266,19 @@ and (orientation: portrait) {
   }
   .heroimg {
     h1 {
-      font-size: 2rem;
+      padding-top: 4.4rem;
+      font-size: 2.7rem;
+      margin-right: 0px;
+
+      .phoebe {
+        font-size: 3rem;
+        }
       }
 
       p {
-        font-size: 1.5rem;
+        font-size: 2.3rem;
+        line-height: 1.3;
+        margin-right: 0px;
       }
     }
 
@@ -277,8 +292,8 @@ and (orientation: portrait) {
 
 // most smartphones (landscape)
 @media only screen
-  and (min-width: 321px)
-  and (max-width: 812px)
+  and (min-width: 320px)
+  and (max-width: 824px)
   and (orientation: landscape) {
     #home {
       background-attachment: scroll;
@@ -286,11 +301,20 @@ and (orientation: portrait) {
 
     .heroimg {
       h1 {
-        font-size: 1.9rem;
+        text-align: right;
+        padding-top: 4.4rem;
+        font-size: 3rem;
+        margin-right: 0px;
+
+        .phoebe {
+          font-size: 3.3rem;
+          }
         }
 
         p {
-          font-size: 1.4rem;
+          text-align: right;
+          font-size: 2.5rem;
+          margin-right: 0px;
         }
       }
 }
@@ -318,3 +342,91 @@ and (orientation: portrait) {
       background-attachment: scroll;
     }
   }
+
+  /* ----------- iPhone 5, 5S, 5C and 5SE ----------- */
+
+  /* Portrait */
+  @media only screen
+    and (min-device-width: 320px)
+    and (max-device-width: 568px)
+    and (-webkit-min-device-pixel-ratio: 2)
+    and (orientation: portrait) {
+      #home {
+        height: 720px;
+        background-attachment: scroll;
+        background-position: left -120px bottom 0px;
+      }
+
+      .heroimg {
+        h1 {
+          p {
+            font-size: 2rem;
+            line-height: 1.3;
+          }
+        }
+      }
+  }
+
+  /* ----------- iPhone 6+, 7+ and 8+ ----------- */
+
+/* Landscape */
+@media only screen
+  and (min-device-width: 414px)
+  and (max-device-width: 736px)
+  and (-webkit-min-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    #home {
+      height: 415px;
+      background-attachment: scroll;
+    }
+}
+
+
+/* ----------- Galaxy S4, S5 and Note 3 ----------- */
+
+
+/* Portrait */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: portrait) {
+    #home {
+      height: 720px;
+      background-attachment: scroll;
+      background-position: left -120px bottom 0px;
+    }
+
+    .heroimg {
+      h1 {
+        p {
+          font-size: 2rem;
+          line-height: 1.3;
+        }
+      }
+    }
+}
+
+/* Landscape */
+@media screen
+  and (device-width: 320px)
+  and (device-height: 640px)
+  and (-webkit-device-pixel-ratio: 3)
+  and (orientation: landscape) {
+    .heroimg {
+      h1 {
+        font-size: 2.7rem;
+        margin-right: 0px;
+
+        .phoebe {
+          font-size: 3rem;
+          }
+        }
+
+        p {
+          text-align: right;
+          font-size: 2.5rem;
+          margin-right: 0px;
+        }
+      }
+}
