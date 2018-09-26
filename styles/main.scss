@@ -239,6 +239,9 @@ ul {
 }
 
 .card-skills {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
   margin-bottom: 1.5rem;
   box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
 
@@ -254,7 +257,10 @@ ul {
 }
 
 //<---------------------- Contact section ---------------------->
-.card {
+.card-contact {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
   margin-bottom: 1.5rem;
   box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
 
