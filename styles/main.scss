@@ -261,7 +261,6 @@ ul {
   max-width: 800px;
   margin: 0 auto;
   float: none;
-  margin-bottom: 1.5rem;
   box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
 
   .card-body {
@@ -275,6 +274,10 @@ ul {
 
 .hide {
   display: none !important;
+}
+
+#contact {
+  background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
 }
 
 //<---------------------- footer ---------------------->
