@@ -280,17 +280,32 @@ ul {
 //<---------------------- footer ---------------------->
 
 .footer {
-  
+  background-color: #71b2b4;
+
   .sm-icons {
     margin-top: 5rem;
     margin-bottom: 5rem;
     .sm-icon {
       border: 1px solid purple;
-      margin-left: 2rem;
-      margin-right: 2rem;
+      margin-left: 4vw;
+      margin-right: 4vw;
     }
   }
 
+  .copyright {
+    background-color: #42989b;
+    max-width: 2500px;
+
+    .row {
+
+      p {
+        color: white;
+        font-size: 1rem;
+        padding-top: 5px;
+    }
+    }
+
+}
 }
 
 // RESPONSIVE css
