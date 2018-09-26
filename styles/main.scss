@@ -48,16 +48,13 @@ ul {
   }
 }
 
-// Navbar
+//<---------------------- Navbar ---------------------->
 .navbar {
   background-color: white;
   position: fixed;
   width: 100%;
   transition: top 0.3s;
   z-index: 10;
-
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
 
 }
@@ -129,7 +126,10 @@ ul {
 
 //<---------------------- Portfolio section ---------------------->
 #portfolio {
-  padding-top: 2rem;
+  h2 {
+    padding-top: 3.5rem;
+  }
+
 }
 
 // card deck
@@ -219,7 +219,9 @@ ul {
 //<---------------------- Skills section ---------------------->
 
 #skills {
-
+  h2 {
+    padding-top: 3.5rem;
+  }
 }
 
 .jquery {
@@ -278,6 +280,9 @@ ul {
 
 #contact {
   background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
+  h2 {
+    padding-top: 3.5rem;
+  }
 }
 
 //<---------------------- footer ---------------------->
