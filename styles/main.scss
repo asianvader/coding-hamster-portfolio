@@ -118,6 +118,22 @@ ul {
   transition: ease all .2s;
 }
 
+// Underline active links in navbar
+nav {
+  ul {
+    li {
+      a {
+        border-bottom: transparent solid 5px;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        border-bottom: #AACCCD solid 5px;
+      }
+    }
+  }
+}
+
 
 // <---------------------- ---------------------->
 //Background images
