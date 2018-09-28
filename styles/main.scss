@@ -9,6 +9,10 @@
 //   border: 3px dotted blue;
 //   }
 
+// variables
+$logo-color: #85E0E8;
+
+//<----------------------  ---------------------->
 
 body {
   font-family: 'Roboto', sans-serif !important;
@@ -17,7 +21,7 @@ body {
 
 h2 {
   display: inline-block;
-  border-bottom: solid 5px #AACCCD;
+  border-bottom: solid 5px $logo-color;
   font-size: 2.5rem;
   text-transform: uppercase;
   vertical-align: middle;
@@ -128,7 +132,7 @@ nav {
       }
 
       a:hover {
-        border-bottom: #AACCCD solid 5px;
+        border-bottom: $logo-color solid 5px;
       }
     }
   }
