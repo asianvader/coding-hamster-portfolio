@@ -10,7 +10,7 @@ $(document).ready(function () {
   scrollLink.click(function(e) {
     e.preventDefault();
     $('body,html').animate({
-      scrollTop: $(this.hash).offset().top
+      scrollTop: $(this.hash).offset().top - 66
     }, 1000 );
   });
 
@@ -24,5 +24,6 @@ $(document).ready(function () {
       }
     })
   });
+
 
 });
