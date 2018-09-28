@@ -134,6 +134,16 @@ nav {
   }
 }
 
+.navbar-brand {
+
+  h4 {
+    font-family: 'Oswald', sans-serif;
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+}
 
 // <---------------------- ---------------------->
 //Background images
@@ -395,10 +405,21 @@ nav {
         color: white;
         font-size: 0.8em;
         padding-top: 10px;
+        margin-bottom: 0;
+      }
     }
-    }
-
+  }
 }
+
+//Icon attribution
+.icon-credit {
+  p {
+    font-size: 0.3rem;
+  }
+
+  a {
+    color: white;
+  }
 }
 
 // RESPONSIVE css
