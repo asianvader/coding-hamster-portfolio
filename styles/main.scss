@@ -261,7 +261,6 @@ ul {
   max-width: 800px;
   margin: 0 auto;
   float: none;
-  margin-bottom: 1.5rem;
   box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
 
   .card-body {
@@ -275,6 +274,49 @@ ul {
 
 .hide {
   display: none !important;
+}
+
+#contact {
+  background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
+}
+
+//<---------------------- footer ---------------------->
+
+.footer {
+  background-color: #71b2b4;
+
+  .sm-icons {
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+
+    a {
+    	text-decoration: none;
+
+      i:hover{
+      	opacity: 0.5;
+      }
+    }
+
+    .sm-icon {
+      margin-left: 4vw;
+      margin-right: 4vw;
+    }
+  }
+
+  .copyright {
+    background-color: #42989b;
+    max-width: 2500px;
+
+    .row {
+
+      p {
+        color: white;
+        font-size: 0.8em;
+        padding-top: 10px;
+    }
+    }
+
+}
 }
 
 // RESPONSIVE css
