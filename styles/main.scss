@@ -1,11 +1,11 @@
-/* GRID SETTINGS */
-// .my-container {
+// /* GRID SETTINGS */
+// .container {
 //   border: 1px solid green;
 //   }
-// .my-row {
+// .row {
 //   border: 3px solid red;
 //   }
-// .my-col {
+// .col {
 //   border: 3px dotted blue;
 //   }
 
@@ -239,7 +239,10 @@ ul {
 }
 
 .card-skills {
-  margin-bottom: 1rem;
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 1.5rem;
   box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
 
   p {
@@ -251,6 +254,27 @@ ul {
       font-size: 1rem;
     }
   }
+}
+
+//<---------------------- Contact section ---------------------->
+.card-contact {
+  max-width: 800px;
+  margin: 0 auto;
+  float: none;
+  margin-bottom: 1.5rem;
+  box-shadow: 3px 3px 6px 0px rgba(112,110,110,1);
+
+  .card-body {
+    .form-group {
+      .row {
+      padding-top: 15px;
+      }
+    }
+  }
+}
+
+.hide {
+  display: none !important;
 }
 
 // RESPONSIVE css
