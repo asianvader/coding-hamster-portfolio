@@ -9,6 +9,10 @@
 //   border: 3px dotted blue;
 //   }
 
+// variables
+$logo-color: #85E0E8;
+
+//<----------------------  ---------------------->
 
 body {
   font-family: 'Roboto', sans-serif !important;
@@ -17,7 +21,7 @@ body {
 
 h2 {
   display: inline-block;
-  border-bottom: solid 5px #AACCCD;
+  border-bottom: solid 5px $logo-color;
   font-size: 2.5rem;
   text-transform: uppercase;
   vertical-align: middle;
@@ -48,20 +52,104 @@ ul {
   }
 }
 
-// Navbar
+//<---------------------- Navbar ---------------------->
 .navbar {
   background-color: white;
   position: fixed;
   width: 100%;
   transition: top 0.3s;
   z-index: 10;
-
-  -webkit-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
-  -moz-box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
   box-shadow: 0px 2px 2px 0px rgba(0,0,0,0.13);
 
 }
 
+// Hamburger menu animation
+
+.navbar-toggler {
+  border: none;
+  background: transparent !important;
+}
+
+.navbar-toggler:focus {
+  outline: none;
+  background: transparent !important;
+}
+
+.navbar-toggler .icon-bar {
+  background-color: black;
+  transform: rotate(0deg) translate(0px, 0px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler .icon-bar {
+  display: block;
+  width: 22px;
+  height: 2px;
+  border-radius: 1px;
+}
+
+.navbar-toggler .icon-bar+.icon-bar {
+  margin-top: 4px;
+}
+
+.icon-bar:nth-child(2) {
+  width: 16px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:hover>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:active>.icon-bar:nth-child(2) {
+  width: 22px;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 4px);
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(2) {
+  opacity: 0;
+  transition: ease all .2s;
+}
+
+.navbar-toggler:not(.collapsed) .icon-bar:nth-child(3) {
+  transform: rotate(-45deg) translate(4px, -4px);
+  transition: ease all .2s;
+}
+
+// Underline active links in navbar
+nav {
+  ul {
+    li {
+      a {
+        border-bottom: transparent solid 5px;
+        padding-bottom: 5px;
+      }
+
+      a:hover {
+        border-bottom: $logo-color solid 5px;
+      }
+    }
+  }
+}
+
+.navbar-brand {
+
+  h4 {
+    font-family: 'Oswald', sans-serif;
+    vertical-align: bottom;
+    display: inline-block;
+    font-size: 1.4rem;
+    padding-left: 10px;
+  }
+}
+
+// <---------------------- ---------------------->
 //Background images
 
 // hero image
@@ -129,7 +217,10 @@ ul {
 
 //<---------------------- Portfolio section ---------------------->
 #portfolio {
-  padding-top: 2rem;
+  h2 {
+    padding-top: 3.5rem;
+  }
+
 }
 
 // card deck
@@ -219,7 +310,9 @@ ul {
 //<---------------------- Skills section ---------------------->
 
 #skills {
-
+  h2 {
+    padding-top: 3.5rem;
+  }
 }
 
 .jquery {
@@ -278,6 +371,9 @@ ul {
 
 #contact {
   background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
+  h2 {
+    padding-top: 3.5rem;
+  }
 }
 
 //<---------------------- footer ---------------------->
@@ -313,10 +409,21 @@ ul {
         color: white;
         font-size: 0.8em;
         padding-top: 10px;
+        margin-bottom: 0;
+      }
     }
-    }
-
+  }
 }
+
+//Icon attribution
+.icon-credit {
+  p {
+    font-size: 0.3rem;
+  }
+
+  a {
+    color: white;
+  }
 }
 
 // RESPONSIVE css
