@@ -1,6 +1,15 @@
 
-// variables
+// color names
+$light-turquoise: #71b2b4;
+$dark-turquoise: #42989b;
+$light-grey: #D5DDDE;
+$pale-yellow: #FFFACD;
+
+// color object
 $logo-color: #85E0E8;
+$footer-color: $light-turquoise;
+$copyright-bg: $dark-turquoise;
+$hero-text: $pale-yellow;
 
 //<----------------------  ---------------------->
 
@@ -163,7 +172,7 @@ nav {
     margin-right: 100px;
 
     .phoebe {
-      color: #FFFACD;
+      color: $pale-yellow;
       font-size: 4rem;
       }
     }
@@ -228,7 +237,7 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
         font-size: 1rem;
@@ -250,7 +259,7 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
         font-size: 1rem;
@@ -272,7 +281,7 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
         font-size: 1rem;
@@ -360,7 +369,7 @@ nav {
 }
 
 #contact {
-  background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
+  background: linear-gradient(to bottom, #ffffff 90%, $footer-color 10%);
   h2 {
     padding-top: 3.5rem;
   }
@@ -369,7 +378,7 @@ nav {
 //<---------------------- footer ---------------------->
 
 .footer {
-  background-color: #71b2b4;
+  background-color: $footer-color;
 
   .sm-icons {
     margin-top: 5rem;
@@ -390,7 +399,7 @@ nav {
   }
 
   .copyright {
-    background-color: #42989b;
+    background-color: $copyright-bg;
     max-width: 2500px;
 
     .row {
