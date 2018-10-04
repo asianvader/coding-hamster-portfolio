@@ -602,3 +602,12 @@ and (orientation: portrait) {
         }
       }
 }
+/*----------- High res desktop -----------*/
+
+@media
+(min-width: 1281px) {
+  .heroimg {
+    width:auto;
+    height:100vh;
+    }
+}
