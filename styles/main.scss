@@ -181,12 +181,10 @@ nav {
     }
   }
 
-
-// About me
-
+//<---------------------- About me ---------------------->
 #about {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   width:100%;
   height:auto;
   background: linear-gradient(
@@ -211,7 +209,7 @@ nav {
 //<---------------------- Portfolio section ---------------------->
 #portfolio {
   h2 {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
 }
@@ -310,7 +308,7 @@ nav {
 
 #skills {
   h2 {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
   ul {
@@ -381,7 +379,7 @@ nav {
 #contact {
   background: linear-gradient(to bottom, #ffffff 90%, $footer-color 10%);
   h2 {
-    padding-top: 3.5rem;
+  padding-top: 2.5rem;
   }
 }
 
@@ -435,8 +433,7 @@ nav {
   }
 }
 
-// RESPONSIVE css
-//----------------------
+// <----------- RESPONSIVE CSS ----------->
 
 // most smartphones (portrait)
 @media (min-width: 320px)
