@@ -407,7 +407,7 @@ nav {
   }
 
   .copyright {
-    background-color: $copyright-bg;
+    background-color: darken($copyright-bg, 5%);
     max-width: 2500px;
 
     .row {
