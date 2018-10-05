@@ -196,8 +196,8 @@ nav {
   width:100%;
   height:auto;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.7),
-      rgba(0, 0, 0, 0.7)),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)),
       url('images/aboutbg1.jpeg');
   background-repeat:repeat;
   background-position: center;
@@ -240,6 +240,8 @@ nav {
         border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
         color: white;
 
@@ -262,6 +264,8 @@ nav {
         border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
         color: white;
 
@@ -284,6 +288,8 @@ nav {
         border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
       }
 
