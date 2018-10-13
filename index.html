@@ -2,14 +2,53 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#71B2B4">
+    <meta name="description" content="Portfolio of Phoebe Voong-Fadel, The Coding Hamster. I am a freelance Frontend Web Developer. See my latest projects and skills for more information.">
+
+    <!-- OG Markup -->
+    <meta property="og:url"          content="https://thecodinghamster.com">
+    <meta property="og:type"         content="website">
+    <meta property="og:title"        content="Phoebe Voong-Fadel | The Coding Hamster">
+    <meta property="og:description"  content="Portfolio of Phoebe Voong-Fadel, The Coding Hamster. I am a freelance Frontend Web Developer. See my latest projects and skills for more information.">
+    <meta property="og:image"        content="https://thecodinghamster.com/images/hamster-thumbnail.jpeg">
+
+    <meta name="twitter:card"         content="summary">
+    <meta name="twitter:url"          content="https://thecodinghamster.com">
+    <meta name="twitter:title"        content="Phoebe Voong-Fadel | The Coding Hamster">
+    <meta name="twitter:description"  content="Portfolio of Phoebe Voong-Fadel, The Coding Hamster. I am a freelance Frontend Web Developer. See my latest projects and skills for more information.">
+    <meta name="twitter:image"        content="https://thecodinghamster.com/images/hamster-thumbnail.jpeg">
+
+    <meta name="thumbnail" content="https://thecodinghamster.com/images/hamster-thumbnail.jpeg" />
+
+    <title>Phoebe Voong-Fadel | The Coding Hamster</title>
+
+    <!-- Favicon -->
+    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
 
     <!-- Bootstrap -->
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <!-- JS -->
-    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script defer src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <script defer src="script.min.js"></script>
+
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-124810072-2"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-124810072-2');
+    </script>
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
     <!-- CSS -->
     <link rel="stylesheet" href="main.min.css">
@@ -19,17 +58,7 @@
     <link href="https://fonts.googleapis.com/css?family=Roboto:400,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Oswald:400,700" rel="stylesheet">
 
-    <!-- Favicon -->
-    <link rel="apple-touch-icon" sizes="180x180" href="images/apple-touch-icon.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="manifest" href="manifest.json">
-    <link rel="mask-icon" href="images/safari-pinned-tab.svg" color="#5bbad5">
-    <meta name="msapplication-TileColor" content="#da532c">
-    <meta name="theme-color" content="#71B2B4">
-
-    <title>Phoebe Voong-Fadel | The Coding Hamster</title>
-    <meta name="description" content="Portfolio of Phoebe Voong-Fadel, The Coding Hamster. I am a freelance Frontend Web Developer. See my latest projects and skills for more information.">
+    <link rel="canonical" href="https://thecodinghamster.com">
   </head>
 
   <body>
@@ -86,15 +115,21 @@
           </div>
         </div>
         <div class="row my-row">
-          <div class="col my-col">
+          <div class="col my-col text-left">
             <p>
-              My career has taken many twists and turns and I didn’t have a conventional start into web development. I worked in the Higher Education sector for over a decade before becoming a Frontend Web Developer.
+              I'm a geek turned coder and Frontend Web Developer. At the end of 2017, I started my coding journey with the web fundamentals: HTML5 and CSS.  Today I have built two public commercial sites: Rainbow Nails Gloucester and The Coding Hamster. I'm an active Frontend Developer building on the latest web technologies and trends.
             </p>
             <p>
-              I’m self-taught, following various online learning web platforms such as freeCodeCamp, Codecademy and Lynda.com.
+              I’m self-taught, following various online learning web platforms such as freeCodeCamp, Codecademy and Lynda.com. I have completed two certifications from freeCodeCamp: Responsive Web Design Certification and Javascript Algorithms and Data Structures Certification.
             </p>
             <p>
-              I am now freelancing as a Frontend Web Developer. I can design and build bespoke responsive websites from scratch or customise website templates. My current interests are in JavaScript and frameworks/libraries such as Bootstrap, React and Redux.
+              Prior, I worked in the Higher Education sector. One of my main achievements was initiating and project managing the rollout of a bespoke exam system for the business school at a leading university in London. The system was an immediate success and adopted by all teaching faculty.
+            </p>
+            <p>
+              I am now freelancing as a Frontend Web Developer based in Gloucester. I design and build bespoke responsive websites or customise website templates. My current interests are in JavaScript and frameworks/libraries such as Bootstrap, React and Redux.
+            </p>
+            <p>
+              I have a passion for learning new skills, building projects, working and collaborating with other like-minded people.
             </p>
           </div>
         </div>
@@ -114,35 +149,31 @@
         <div class="card-deck">
           <div class="card card1">
             <div class="card-body">
-              <a href="https://rainbownailsgloucester.com/" target="_blank">
+              <a href="https://rainbownailsgloucester.com/" target="_blank" rel="noopener">
                 <img class="card-img-top" src="images/rainbownailswebsite.png" alt="preview of rainbow nails website" class="img-fluid">
               </a>
               <h5 class="card-title">Rainbow Nails</h5>
-              <p class="card-text">A single page website for marketing a new nail salon. I built the fully responsive website using Bootstrap.</p>
-              <p class="card-text">Features include: an image carousel, embedded customer reviews, integrated social media and Google maps.</p>
-              <p class="card-text">Click on the image to see the project.</p>
+              <p class="card-text text-left">A single page website for marketing a new nail salon. I built the fully responsive website using Bootstrap.</p>
+              <p class="card-text text-left">Features include: an image carousel, embedded customer reviews, integrated social media and Google maps.</p>
             </div>
           </div>
           <div class="card card2">
             <div class="card-body">
-              <a href="https://codepen.io/asianvader/full/EerRmO" target="_blank">
+              <a href="https://codepen.io/asianvader/full/EerRmO" target="_blank" rel="noopener">
                 <img class="card-img-top" src="images/weatherapp.png" alt="preview of a local weather app">
               </a>
               <h5 class="card-title">Local Weather App</h5>
-              <p class="card-text">A project displaying your local weather. I built this project using Codepen.</p>
-              <p class="card-text">Skills used: HTML5, CSS, jQuery, JavaScript, Bootstrap and APIs.</p>
-              <p class="card-text">Click on the image to see the project.</p>
+              <p class="card-text text-left">A project displaying your local weather. I built this project using Codepen.</p>
+
             </div>
           </div>
           <div class="card card3">
             <div class="card-body">
-              <a href="https://codepen.io/asianvader/full/mGvYxV" target="_blank">
+              <a href="https://codepen.io/asianvader/full/mGvYxV" target="_blank" rel="noopener">
                 <img class="card-img-top" src="images/twitchtv.png" alt="preview of a twitch tv streamer app">
               </a>
               <h5 class="card-title">Twitch.TV Streamer</h5>
-              <p class="card-text">A project using the Twitvh JSON API. I built this project using Codepen.</p>
-              <p class="card-text">Skills used: HTML5, CSS, jQuery, JavaScript, Bootstrap and APIs.</p>
-              <p class="card-text">Click on the image to see the project.</p>
+              <p class="card-text text-left">A project using the Twitch JSON API. I built this project using Codepen.</p>
             </div>
           </div>
         </div>
@@ -323,7 +354,6 @@
       <hr>
     </section>
 
-
     <section id="contact">
       <div class="container">
         <div class="row">
@@ -410,47 +440,31 @@
         <div class="row">
           <div class="col">
             <div class="sm-icons">
-              <a class="linkedin sm-icon" href="https://www.linkedin.com/in/phoebe-voong-fadel-36961234/" target="_blank">
+              <a class="linkedin sm-icon" href="https://www.linkedin.com/in/phoebe-voong-fadel-36961234/" target="_blank" rel="noopener">
                 <i class="fab fa-linkedin-in fa-2x" style="color: white"></i>
               </a>
-              <a class="twitter sm-icon" href="https://twitter.com/PhoebeVF" target="_blank" >
+              <a class="twitter sm-icon" href="https://twitter.com/PhoebeVF" target="_blank" rel="noopener">
                 <i class="fab fa-twitter fa-2x" style="color: white"></i>
               </a>
-              <a class="gith sm-icon" href="https://github.com/asianvader" target="_blank">
+              <a class="gith sm-icon" href="https://github.com/asianvader" target="_blank" rel="noopener">
                 <i class="fab fa-github fa-2x" style="color: white"></i>
               </a>
-              <a class="fcc sm-icon" href="https://www.freecodecamp.org/asianvader" target="_blank">
+              <a class="fcc sm-icon" href="https://www.freecodecamp.org/asianvader" target="_blank" rel="noopener">
                 <i class="fab fa-free-code-camp fa-2x" style="color: white"></i>
               </a>
             </div>
           </div>
         </div>
-          </div>
+      </div>
       <div class="container copyright">
         <div class="row">
           <div class="col">
             <span><p class="text-center">&copy; 2018 Phoebe Voong-Fadel. All rights reserved.</p>
             </span>
-            <span class="icon-credit"><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></p></span>
+            <span class="icon-credit"><p>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank" rel="noopener">CC 3.0 BY</a></p></span>
           </div>
         </div>
       </div>
     </footer>
-
-
-
-    <!-- Bootstrap -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
   </body>
 </html>
-
-<!-- <section>
-  <div class="container my-container">
-    <div class="row my-row">
-      <div class="col my-col">
-
-      </div>
-    </div>
-  </div>
-</section> -->

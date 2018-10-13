@@ -16,12 +16,12 @@ const styleWatch = ['scripts/*.scss'];
 
 
 gulp.task('log', function() {
-  gutil.log('== My Log Task ==')
+  gutil.log('== My Log Task ==');
 });
 
 gulp.task('copy', function() {
   gulp.src('*.html')
-  .pipe(gulp.dest(outputDir))
+  .pipe(gulp.dest(outputDir));
 });
 
 gulp.task('style', function() {
@@ -50,7 +50,7 @@ gulp.task('js', function() {
   .pipe(uglify())
   .pipe(rename('script.min.js'))
   .pipe(sourcemaps.write('.'))
-  .pipe(gulp.dest(outputDir))
+  .pipe(gulp.dest(outputDir));
 });
 
 
@@ -62,14 +62,14 @@ gulp.task('watch', ['default'], function() {
 
 gulp.task('html', function() {
   gulp.src(htmlSources)
-  .pipe(connect.reload())
+  .pipe(connect.reload());
 });
 
 gulp.task('connect', function() {
   connect.server({
     root: 'assets',
     livereload: true
-  })
+  });
 });
 
 gulp.task('default', [ 'style', 'connect', 'html', 'js']);

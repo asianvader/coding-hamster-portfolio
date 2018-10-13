@@ -1,6 +1,15 @@
 
-// variables
+// color names
+$light-turquoise: #71b2b4;
+$dark-turquoise: #42989b;
+$light-grey: #D5DDDE;
+$pale-yellow: #FFFACD;
+
+// color object
 $logo-color: #85E0E8;
+$footer-color: $light-turquoise;
+$copyright-bg: $dark-turquoise;
+$hero-text: $pale-yellow;
 
 //<----------------------  ---------------------->
 
@@ -34,13 +43,7 @@ hr {
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0));
 }
 
-ul {
-  padding: 0;
 
-  li {
-    list-style-type: none;
-  }
-}
 
 //<---------------------- Navbar ---------------------->
 .navbar {
@@ -57,17 +60,17 @@ ul {
 
 .navbar-toggler {
   border: none;
-  background: transparent !important;
+  background: transparent;
 }
 
 .navbar-toggler:focus {
   outline: none;
-  background: transparent !important;
+  background: transparent;
 }
 
 .navbar-toggler .icon-bar {
   background-color: black;
-  transform: rotate(0deg) translate(0px, 0px);
+  transform: rotate(0) translate(0, 0);
   transition: ease all .2s;
 }
 
@@ -163,7 +166,7 @@ nav {
     margin-right: 100px;
 
     .phoebe {
-      color: #FFFACD;
+      color: $pale-yellow;
       font-size: 4rem;
       }
     }
@@ -178,17 +181,15 @@ nav {
     }
   }
 
-
-// About me
-
+//<---------------------- About me ---------------------->
 #about {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   width:100%;
   height:auto;
   background: linear-gradient(
-      rgba(0, 0, 0, 0.6),
-      rgba(0, 0, 0, 0.6)),
+      rgba(0, 0, 0, 0.8),
+      rgba(0, 0, 0, 0.8)),
       url('images/aboutbg1.jpeg');
   background-repeat:repeat;
   background-position: center;
@@ -208,7 +209,7 @@ nav {
 //<---------------------- Portfolio section ---------------------->
 #portfolio {
   h2 {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
   }
 
 }
@@ -228,9 +229,11 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
         color: white;
 
@@ -250,9 +253,11 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
         color: white;
 
@@ -272,9 +277,11 @@ nav {
       padding: 0.5rem;
 
       img {
-        border: 1px solid #D5DDDE;
+        border: 1px solid $light-grey;
       }
       .card-text {
+        padding-left: 1rem;
+        padding-right: 1rem;
         font-size: 1rem;
       }
 
@@ -301,7 +308,17 @@ nav {
 
 #skills {
   h2 {
-    padding-top: 3.5rem;
+    padding-top: 2.5rem;
+  }
+
+  ul {
+    margin:0 auto;
+    width: 60%;
+
+    li {
+      text-align: left;
+      margin: 0 auto;
+    }
   }
 }
 
@@ -360,16 +377,16 @@ nav {
 }
 
 #contact {
-  background: linear-gradient(to bottom, #ffffff 90%, #71b2b4 10%);
+  background: linear-gradient(to bottom, #ffffff 90%, $footer-color 10%);
   h2 {
-    padding-top: 3.5rem;
+  padding-top: 2.5rem;
   }
 }
 
 //<---------------------- footer ---------------------->
 
 .footer {
-  background-color: #71b2b4;
+  background-color: $footer-color;
 
   .sm-icons {
     margin-top: 5rem;
@@ -390,7 +407,7 @@ nav {
   }
 
   .copyright {
-    background-color: #42989b;
+    background-color: darken($copyright-bg, 5%);
     max-width: 2500px;
 
     .row {
@@ -416,8 +433,7 @@ nav {
   }
 }
 
-// RESPONSIVE css
-//----------------------
+// <----------- RESPONSIVE CSS ----------->
 
 // most smartphones (portrait)
 @media (min-width: 320px)
@@ -446,9 +462,17 @@ and (orientation: portrait) {
     }
 
     #about {
+      background-position: left;
       p {
+        font-size: 1.2rem;
         margin-left: 0px;
         margin-right: 0px;
+      }
+    }
+
+    #skills {
+      ul {
+        width: 100%;
       }
     }
 }
@@ -592,4 +616,13 @@ and (orientation: portrait) {
           margin-right: 0px;
         }
       }
+}
+/*----------- High res desktop -----------*/
+
+@media
+(min-width: 1281px) {
+  .heroimg {
+    width:auto;
+    height:100vh;
+    }
 }
